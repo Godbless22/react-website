@@ -7,7 +7,7 @@ function SingleProduct(props){
         <div className='col-23 col-md-3 mb-4'>
             <div className="card">
             
-            <Link to={`/product/${props.product.title}/${props.product.id}`}><img src={logo} className="card-img-top" alt="..."/> </Link>
+            <Link to={`/product/${props.product.title}/${props.product.id}`}> <img src={logo} className="card-img-top" alt="..."/> </Link>
                 <div className="card-body">
                 <h6 className="card-title"> <Link to={`/product/${props.product.title}/${props.product.id}`}>{props.product.title}</Link></h6>
                 

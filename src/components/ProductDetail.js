@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 
 
-function ProductDetail(props) {
+function ProductDetail() {
     const baseUrl='http://127.0.0.1:8000/api';
     // const [totalResults, setTotalResults]=useState(0);
     const [productData,setproductData]=useState([]);
@@ -15,7 +15,7 @@ function ProductDetail(props) {
 
     useEffect(() => {
         fetchData(baseUrl+'/product/'+product_id);
-    });
+    },[]);
 
     function fetchData(baseurl){
         fetch(baseurl)

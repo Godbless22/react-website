@@ -57,7 +57,7 @@ function App() {
         <Route path='/checkout' element={ <Checkout />}/>
         <Route path='/order/success' element={ <OrderSuccess />}/>
         <Route path='/order/failure' element={ <OrderFailure />}/>
-        <Route path='/test/fetch' element={<TestFetch />}/>
+        {/* <Route path='/test/fetch' element={<TestFetch />}/> */}
         {/* Customer Routes */}
         <Route path='/customer/register' element={ <Register />}/>
         <Route path='/customer/login' element={ <Login />}/>
